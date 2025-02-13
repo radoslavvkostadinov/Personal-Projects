@@ -1,4 +1,4 @@
-# Trigger that prevents inserting ratings with irrelevant dates.
+# Trigger that prevents inserting ratings with irrelevant rates and dates.
 DELIMITER $$
 	CREATE TRIGGER invalid_rating
     BEFORE INSERT

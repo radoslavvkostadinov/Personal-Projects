@@ -15,13 +15,28 @@ The project follows a **Snowflake** Schema design to efficiently manage event an
 
 ![Image](https://github.com/user-attachments/assets/0e0201fc-d81c-44ff-abed-a8ebf823ed9c)
 
-Entities Overview
-Speakers – Stores details about event speakers
-Sessions – Represents individual sessions conducted by speakers
-Attendees – Contains information about event participants
-Registrations – Acts as a bridge between attendees and events
-Reviews – Captures attendee ratings
-Venues – Stores details about locations where sessions are held
-Schedule – Links sessions, venues, and event timings
+## Entities Overview
 
-By leveraging this structured, normalized approach, the schema ensures efficient data retrieval, integrity, and scalability.
+- **Speakers**  
+  Stores details about event speakers  
+
+- **Sessions**  
+  Represents individual sessions conducted by speakers  
+
+- **Attendees**  
+  Contains information about event participants  
+
+- **Registrations**  
+  Acts as a bridge between attendees and events  
+
+- **Reviews**  
+  Captures attendee ratings  
+
+- **Venues**  
+  Stores details about locations where sessions are held  
+
+- **Schedule**  
+  Links sessions, venues, and event timings  
+
+
+By leveraging structured, normalized approach, the schema ensures efficient data retrieval, integrity, and scalability.

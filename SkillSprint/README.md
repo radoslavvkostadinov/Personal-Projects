@@ -10,7 +10,7 @@ That's why **SkillSprint** requires a database system that streamlines event man
 
 **SkillSprint** is also exploring potential partnerships with local businesses to enhance the attendee experience. However, their immediate priority is leveraging collected data to gain meaningful insights into their operations. They aim to understand speaker popularity, attendance trends, and feedback to improve future events and make data-driven decisions.  
 
-**Database Schema Overview**
+## Database Schema Overview
 The project follows a **Snowflake** Schema design to efficiently manage event and conference data. The schema is highly normalized, reducing data redundancy while maintaining clear relationships between entities.
 
 ![Image](https://github.com/user-attachments/assets/0e0201fc-d81c-44ff-abed-a8ebf823ed9c)

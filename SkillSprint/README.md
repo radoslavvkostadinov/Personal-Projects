@@ -15,6 +15,11 @@ The project follows a **Snowflake** Schema design to efficiently manage event an
 
 ![Image](https://github.com/user-attachments/assets/0e0201fc-d81c-44ff-abed-a8ebf823ed9c)
 
+## Events Dashboard 
+The dashboard displays all specified event areas, including upcoming sessions, the average rating (based on at least 10 participants), and other general information.
+
+![Image](https://github.com/user-attachments/assets/22747ec6-696f-4591-b408-e6b852abda27)
+
 ## Entities Overview
 
 - **Speakers**  

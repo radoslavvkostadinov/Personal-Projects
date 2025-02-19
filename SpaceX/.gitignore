@@ -3,3 +3,6 @@
 
 # Pipeline config
 config.json
+
+dbt/target
+dbt/profiles.yaml

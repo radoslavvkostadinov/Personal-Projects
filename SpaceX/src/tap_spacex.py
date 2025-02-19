@@ -18,7 +18,7 @@ def main():
     
     df = pd.read_json(url)
     df = df[['id', 'name', 'date_utc', 'success', 'rocket']]
-    df['success'] = df['success'].apply(lambda x: False if x == 0.0 else True if x == 1.0 else "")
+    df['success'] = df['success'].apply(lambda x: True if x == 1.0 else False)
 
     records = df.to_dict(orient='records')
 

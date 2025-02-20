@@ -5,4 +5,5 @@
 config.json
 
 dbt/target
-dbt/profiles.yaml
+dbt/profiles.yml
+dbt/.user.yml

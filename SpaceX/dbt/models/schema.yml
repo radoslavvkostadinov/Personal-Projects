@@ -1,8 +1,11 @@
 sources:
   - name: public
+    database: de_db
     schema: public
     tables:
-      - name: launches 
+      - name: launches
+      - name: rockets
+      
 
 models:
   - name: launches

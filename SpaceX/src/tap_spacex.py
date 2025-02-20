@@ -1,6 +1,7 @@
 import singer
 import pandas as pd
 
+
 LOGGER = singer.get_logger()
 
 def fetch_launches():
@@ -8,7 +9,7 @@ def fetch_launches():
     
     df = pd.read_json(url)
     df = df[['id', 'name', 'date_utc', 'success', 'rocket']]
-    df['success'] = df['success'].apply(lambda x: True if x == 1.0 else False if x == 0.0 else 'No info')
+    df['success'] = df['success'].apply(lambda x: True if x == 1.0 else False if x == 0.0 else None)
     
     records = df.to_dict(orient='records')
     
@@ -17,7 +18,7 @@ def fetch_launches():
         'id': {'type': 'string'},
         'name': {'type': 'string'},
         'date_utc': {'type': 'string', 'format': 'date-time'},
-        "success": {"type": ["number", "null"]},
+        'success': {'type': ['boolean', 'null']},
         'rocket': {'type': 'string'}
     }
 }

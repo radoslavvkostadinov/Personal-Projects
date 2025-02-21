@@ -18,5 +18,14 @@ models:
         tests:
           - not_null
           - unique
-
+  - name: rockets
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+          - unique
     

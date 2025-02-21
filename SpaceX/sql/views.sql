@@ -10,7 +10,7 @@ FROM de_db.dbt_spacex.successful_launches;
 ------------------------------------------------
 
 CREATE OR REPLACE VIEW de_db.dbt_spacex.launches_per_rocket AS
-    --- CTE - catching recent date per rocket ---
+    --- CTE - catching recent date per rocket using ---
     WITH recent_launch AS (
           SELECT r.name AS rocket_name,
             l.launch_date,

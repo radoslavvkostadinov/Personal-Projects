@@ -41,7 +41,6 @@ GROUP BY rocket;
 
 -------------------------------------
 
----- Trying to handle null values in Snowflake in proper way ----
 SELECT l.name AS launch_name,
 r.name AS rocket_name,
 r.country,
@@ -50,6 +49,7 @@ l.launch_date,
 r.cost_per_launch,
 r.success_rate_pct,
 r.active,
+---- Trying to handle null values in Snowflake in proper way ----
 COALESCE(TO_VARCHAR(l.success), 'Unknown') AS success_status
 FROM de_db.dbt_spacex.rockets r
 JOIN de_db.dbt_spacex.launches l 
